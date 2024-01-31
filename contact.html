@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-wrap">
+    <header>
+        <div class="fluid-text">
+
+          Kontakt
+        </div>
+        <div class="nav-close">X</div>
+        <nav id="nav">
+            <div class="menu-toggle">☰ Menu</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Wykształcenie</a></li>
+                <li><a href="services.html">Projekty</a></li>
+                <li><a href="blog.html">Hobby</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="calculator.html">Kalkulator</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+  <section>
+       
+      <form id="contact-form"  method="POST">
+                <h2 class="animated-text">FORMULARZ KONTAKTOWY</h2>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" id="submit-button" value="Wyślij">
+            </form>
+      
+    </section>
+  
+    
+    <!-- Modalne okno powiadomienia -->
+    <div id="popup" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Mail został wysłany!</p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Jakub Pielichowski. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="konatkt.js"></script>
+</body>
+</html>
